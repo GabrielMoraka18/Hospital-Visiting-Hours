@@ -1,0 +1,50 @@
+﻿<Window x:Class="Hospital_Visiting_Hours.AdminDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin Dashboard" Height="500" Width="800">
+    <Grid Background="WhiteSmoke" Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Admin Dashboard" FontSize="24" FontWeight="Bold" Foreground="DarkBlue" Margin="0,0,0,20" />
+
+        <StackPanel Grid.Row="1" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
+                <Border Background="LightBlue" Padding="20" Margin="10" CornerRadius="10">
+                    <StackPanel>
+                        <TextBlock Text="Total Visitors" FontSize="16" FontWeight="Bold"/>
+                        <TextBlock x:Name="txtTotalVisitors" FontSize="24" FontWeight="Bold" Foreground="DarkBlue"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="Orange" Padding="20" Margin="10" CornerRadius="10">
+                    <StackPanel>
+                        <TextBlock Text="Waiting" FontSize="16" FontWeight="Bold"/>
+                        <TextBlock x:Name="txtWaitingVisitors" FontSize="24" FontWeight="Bold" Foreground="DarkOrange"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="LightGreen" Padding="20" Margin="10" CornerRadius="10">
+                    <StackPanel>
+                        <TextBlock Text="Inside" FontSize="16" FontWeight="Bold"/>
+                        <TextBlock x:Name="txtInsideVisitors" FontSize="24" FontWeight="Bold" Foreground="Green"/>
+                    </StackPanel>
+                </Border>
+              
+            </StackPanel>
+
+            <GroupBox Header="Active Patient Queues" Margin="10">
+                <ListView x:Name="lvPatientQueues" Height="200">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Patient" Width="150" DisplayMemberBinding="{Binding PatientName}"/>
+                            <GridViewColumn Header="Inside" Width="80" DisplayMemberBinding="{Binding InsideCount}"/>
+                            <GridViewColumn Header="Waiting" Width="80" DisplayMemberBinding="{Binding WaitingCount}"/>
+                            <GridViewColumn Header="Total Visitors" Width="120" DisplayMemberBinding="{Binding TotalCount}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</Window>

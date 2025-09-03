@@ -1,0 +1,120 @@
+﻿<Window x:Class="Hospital_Visiting_Hours.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hospital Visiting Hours" Height="700" Width="900"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- ================= Search Patient ================= -->
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0 0 0 10" VerticalAlignment="Center">
+            <TextBlock Text="Search Patient:" VerticalAlignment="Center" FontWeight="Bold" FontSize="14" Margin="0 0 10 0"/>
+            <ComboBox Name="cbSearchPatient" IsEditable="True" Width="250"
+                      Loaded="cbSearchPatient_Loaded"
+                      SelectionChanged="cbSearchPatient_SelectionChanged"
+                      StaysOpenOnEdit="True"/>
+        </StackPanel>
+
+        <!-- ================= Left Side: Visitor Form & QR Code ================= -->
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="0 0 10 0" VerticalAlignment="Top" >
+
+            <GroupBox Header="Visitor Registration" FontWeight="Bold" Padding="10" Margin="0 0 0 10">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Visitor Name:" Width="100" VerticalAlignment="Center"/>
+                        <TextBox Name="txtVisitorName" Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Visitor Surname:" Width="100" VerticalAlignment="Center"/>
+                        <TextBox Name="txtVisitorSurname" Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Cellphone:" Width="100" VerticalAlignment="Center"/>
+                        <TextBox Name="txtCellphone" Width="200" MaxLength="10"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Patient Name:" Width="100" VerticalAlignment="Center"/>
+                        <TextBox Name="txtPatientName" Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Patient Surname:" Width="100" VerticalAlignment="Center"/>
+                        <TextBox Name="txtPatientSurname" Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                        <TextBlock Text="Visit Date:" Width="100" VerticalAlignment="Center"/>
+                        <DatePicker Name="dpVisitDate" Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                        <TextBlock Text="Visit Time:" Width="100" VerticalAlignment="Center"/>
+                        <ComboBox Name="cbVisitTime" Width="200">
+                            <ComboBoxItem Content="09:00 AM"/>
+                            <ComboBoxItem Content="10:00 AM"/>
+                            <ComboBoxItem Content="11:00 AM"/>
+                            <ComboBoxItem Content="12:00 PM"/>
+                            <ComboBoxItem Content="01:00 PM"/>
+                            <ComboBoxItem Content="02:00 PM"/>
+                            <ComboBoxItem Content="03:00 PM"/>
+                        </ComboBox>
+                    </StackPanel>
+                    <Button Name="btnCheckIn" Content="Check In" Width="120" HorizontalAlignment="Left" Click="CheckIn_Click"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- QR Code Display -->
+            <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Width="200" HorizontalAlignment="Left">
+                <StackPanel>
+                    <TextBlock Text="Scan to Register Online" FontWeight="Bold" FontSize="14" Margin="0 0 0 5" TextAlignment="Center"/>
+                    <Image Name="imgQRCode" Width="180" Height="180"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        <Button Content="Open Admin Dashboard" Click="OpenDashboard_Click" Margin="105,8,47,12" Width="200" Height="40" Grid.Column="1"/>
+
+
+        <!-- ================= Right Side: Visitor Lists ================= -->
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" >
+
+            <GroupBox Header="Visitors Inside" FontWeight="Bold" Padding="10" Margin="0 0 0 10">
+                <ListBox Name="lstInsideVisitors" Height="250" Width="350" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <TextBlock Text="{Binding DisplayName}" VerticalAlignment="Center" DockPanel.Dock="Left" Width="220"/>
+                                <Button Content="Send to Waiting" DockPanel.Dock="Right" Padding="4,2" Margin="5,0,0,0"
+                                        Click="SendBackToWaiting_Click" Tag="{Binding}"/>
+                                <Button Content="Remove" DockPanel.Dock="Right" Padding="4,2" Margin="5,0,0,0"
+                                        Click="RemoveVisitor_Click" Tag="{Binding}"/>
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+
+            <GroupBox Header="Waiting Visitors" FontWeight="Bold" Padding="10">
+                <ListBox Name="lstWaitingVisitors" Height="250" Width="350" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <TextBlock Text="{Binding DisplayName}" VerticalAlignment="Center" DockPanel.Dock="Left" Width="220"/>
+                                <Button Content="Move Inside" DockPanel.Dock="Right" Padding="4,2" Margin="5,0,0,0"
+                                        Click="MoveToInside_Click" Tag="{Binding}"/>
+                                <Button Content="Remove" DockPanel.Dock="Right" Padding="4,2" Margin="5,0,0,0"
+                                        Click="RemoveVisitor_Click" Tag="{Binding}"/>
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
