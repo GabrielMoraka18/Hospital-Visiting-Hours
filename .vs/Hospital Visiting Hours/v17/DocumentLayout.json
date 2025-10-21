@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kutlw\\Downloads\\Hospital Visiting Hours\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2109FAD-7B61-4111-A4E7-6A4FC572A51C}|Hospital Visiting Hours\\Hospital Visiting Hours.csproj|c:\\users\\kutlw\\downloads\\hospital visiting hours\\hospital visiting hours\\admindashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B2109FAD-7B61-4111-A4E7-6A4FC572A51C}|Hospital Visiting Hours\\Hospital Visiting Hours.csproj|solutionrelative:hospital visiting hours\\admindashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2109FAD-7B61-4111-A4E7-6A4FC572A51C}|Hospital Visiting Hours\\Hospital Visiting Hours.csproj|c:\\users\\kutlw\\downloads\\hospital visiting hours\\hospital visiting hours\\admindashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2109FAD-7B61-4111-A4E7-6A4FC572A51C}|Hospital Visiting Hours\\Hospital Visiting Hours.csproj|solutionrelative:hospital visiting hours\\admindashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2109FAD-7B61-4111-A4E7-6A4FC572A51C}|Hospital Visiting Hours\\Hospital Visiting Hours.csproj|c:\\users\\kutlw\\downloads\\hospital visiting hours\\hospital visiting hours\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2109FAD-7B61-4111-A4E7-6A4FC572A51C}|Hospital Visiting Hours\\Hospital Visiting Hours.csproj|solutionrelative:hospital visiting hours\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2109FAD-7B61-4111-A4E7-6A4FC572A51C}|Hospital Visiting Hours\\Hospital Visiting Hours.csproj|c:\\users\\kutlw\\downloads\\hospital visiting hours\\hospital visiting hours\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B2109FAD-7B61-4111-A4E7-6A4FC572A51C}|Hospital Visiting Hours\\Hospital Visiting Hours.csproj|solutionrelative:hospital visiting hours\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 304,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminDashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kutlw\\Downloads\\Hospital Visiting Hours\\Hospital Visiting Hours\\AdminDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "Hospital Visiting Hours\\AdminDashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\kutlw\\Downloads\\Hospital Visiting Hours\\Hospital Visiting Hours\\AdminDashboard.xaml.cs",
+              "RelativeToolTip": "Hospital Visiting Hours\\AdminDashboard.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T19:48:36.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminDashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\kutlw\\Downloads\\Hospital Visiting Hours\\Hospital Visiting Hours\\AdminDashboard.xaml",
+              "RelativeDocumentMoniker": "Hospital Visiting Hours\\AdminDashboard.xaml",
+              "ToolTip": "C:\\Users\\kutlw\\Downloads\\Hospital Visiting Hours\\Hospital Visiting Hours\\AdminDashboard.xaml",
+              "RelativeToolTip": "Hospital Visiting Hours\\AdminDashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-03T19:48:10.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\kutlw\\Downloads\\Hospital Visiting Hours\\Hospital Visiting Hours\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Hospital Visiting Hours\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\kutlw\\Downloads\\Hospital Visiting Hours\\Hospital Visiting Hours\\MainWindow.xaml",
+              "RelativeToolTip": "Hospital Visiting Hours\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-24T15:21:42.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kutlw\\Downloads\\Hospital Visiting Hours\\Hospital Visiting Hours\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Hospital Visiting Hours\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kutlw\\Downloads\\Hospital Visiting Hours\\Hospital Visiting Hours\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Hospital Visiting Hours\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAYwAkBAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T15:21:39.022Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
